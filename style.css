@@ -6,7 +6,7 @@
     font-family:Verdana,sans-serif;
 }
 body{
-    background: #080808;
+    background:rgb(0, 0, 0);
     min-height: 200vh;
 }
 .logo img {
