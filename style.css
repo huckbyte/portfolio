@@ -6,15 +6,26 @@
     font-family:Verdana,sans-serif;
 }
 body{
-    background:rgb(0, 0, 0);
+    background: #080808;
     min-height: 200vh;
+   /* background-image:url(Neon_artwork.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment;
+    background-position: center;
+    background-size: contain; */
+    
 }
+/* ---------logo img ---------------*/
+
 .logo img {
     position: relative;
   margin-left: 20px;
   top: 10px;
-  border-radius: 50%;
+  border-radius: 90%;
   }
+
+  /* ---------menu dropdown---------------*/
+
 nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -90,18 +101,24 @@ left: 450px;
 bottom: 400px;
 
 }
+.main p{
+    position:absolute;
+    color: aqua;
+    height: auto;
+    top: 40px;
+    left: 140px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    font-family:'Courier New', Courier, monospace;
+    
+}
 .main h1{
     color: white;
     font-size: 35px;
+    height: auto;
     font-weight: 600;
     letter-spacing: 0.5px;
-    text-shadow:  0 0 10px #111111, 
-                  0 0 20px #0a0a0a, 
-                  0 0 40px #070707, 
-                  0 0 60px #050505, 
-                  0 0 80px #0d0d0e,
-                  0 0 100px #0a0a0a;
-    
 
 }
 .light{
@@ -110,17 +127,11 @@ bottom: 400px;
     left: 0;
     right: 100px;
     width: 10px;
-    height: 70%;
+    height: 90%;
     border: radius 10px;
     background: rgb(27, 204, 151);
     z-index: 2;
-    text-shadow:  0 0 10px #0d0d0e, 
-                  0 0 20px #050505, 
-                  0 0 40px #070707, 
-                  0 0 60px #070707, 
-                  0 0 80px #121313,
-                  0 0 100px #070707;
-                  animation: animatelight 4s linear infinite;
+   animation: animatelight 5s linear infinite;
 }
 @keyframes animatelight{
     0%,5%
@@ -146,10 +157,10 @@ bottom: 400px;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background:rgb(0, 0, 0);
-    animation: animatetoplayer 8s linear infinite;
+    width: 580px;
+    height: 90%;
+    background:#080808;
+    animation: animatetoplayer 10s linear infinite;
 
 }
 @keyframes animatetoplayer{
@@ -192,10 +203,10 @@ bottom: 400px;
 
 .cube{
     position: absolute;
-    left: 40%;
+    left: 45%;
     top: 80%;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
     animation: animate 8s linear infinite;
@@ -228,32 +239,91 @@ bottom: 400px;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    background: linear-gradient(#151515,#00ec00);
-    transform: rotateY(calc(90deg * var(--i)))translateZ(150px);
+    background: linear-gradient(#f01818,#00ec00);
+    transform: rotateY(calc(90deg * var(--i)))translateZ(49px);
 
 }
 .top{
     position:absolute;
     top: 0;
     left: 0;
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(#151515,#00ec00);
-    transform: rotateX(90deg) translateZ(150px);
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#ee0a0a,#00ec00);
+    transform: rotateX(90deg) translateZ(50px);
 }
 .top::before{
     content: '';
     position:absolute;
     top: 0;
     left: 0;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     background: rgb(4, 235, 16);
-    transform: translateZ(-300px);
+    transform: translateZ(-100px);
     filter: blur(50px);
     box-shadow: 0 0 100px rgba(0,255,0,0.2),
                 0 0 100px rgba(0,255,0,0.4),
                 0 0 100px rgba(0,255,0,0.6),
                 0 0 100px rgba(0,255,0,0.8);
     
+}
+
+@media screen and (max-width:480px) {
+    .logo img {
+      border-radius: 50%;
+      }
+      nav ul li {
+        padding: 5px 10px;
+    }
+    nav ul li a{
+        font-weight:5px;
+    
+    }
+    ul {
+        position:relative;
+        display: inline-flex;
+        top: -100px;
+        bottom:0 ;
+        left:72%;
+        flex-direction: column; 
+        gap: 2px;
+    }
+    ul li a{
+        position: relative;
+        font-size: 12.5px;
+        text-decoration: none;
+        line-height: 0.5em;
+        letter-spacing: 1px;
+        text-transform: uppercase; 
+    }
+
+    .main{
+        left: 35px;
+        bottom: 400px;
+        
+        }
+
+        .main h1{
+           
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.25px;
+        
+        }
+        .main p{
+            left: 20px;
+            height: auto;
+        }
+        .toplayer
+        {
+           width: 580px;
+          
+        }
+
+        .cube{
+            position: absolute;
+            left: 30%;
+            top: 65%;
+        }
 }
