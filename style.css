@@ -130,7 +130,7 @@ bottom: 400px;
     width: 10px;
     height: 90%;
     border: radius 10px;
-    background: :#080808;
+    background: : rgb(27, 204, 151);
     z-index: 2;
    animation: animatelight 5s linear infinite;
 }
