@@ -17,13 +17,13 @@ body{
 }
 /* ---------logo img ---------------*/
 
-/*.logo img {
+.logo img {
     position: relative;
   margin-left: 20px;
   top: 10px;
   border-radius: 90%;
   }
-*/
+
   /* ---------menu dropdown---------------*/
 
 nav ul li {
